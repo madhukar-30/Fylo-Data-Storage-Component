@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+--Pale-Blue: hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Dark-Blue: hsl(228, 56%, 26%);
+--Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+body{
+ min-height: 100vh;
+ display: grid;
+ place-items: center;
+background:var(--Very-Dark-Blue) url(./images/bg-desktop.png) no-repeat bottom;
+background-size: 100% 50%;
+font-family: 'Raleway', sans-serif;
+}
+main{
+   width: 65%;
+   min-height: 180px;
+
+   display: flex;
+   justify-content: space-between;
+}
+.container1{
+    background-color: var(--Dark-Blue);
+    justify-content: space-between;
+   padding:2.5rem 3rem 3rem 2.5rem;
+     width:34%;
+   border-radius: 0.5rem;
+   border-top-right-radius: 49%;
+}
+.logo{
+    margin-bottom:2rem;
+}
+.icons{
+    display: flex;
+  
+}
+.icons>div{
+    width:45px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:1.2rem;
+    border-radius: 0.3rem;
+    background-color: var(--Very-Dark-Blue);
+
+}
+.icon{
+    transition: all 0.2s ease-in-out;
+}
+.icon:hover{
+transform: scale(1.2);
+}
+.container2{
+    background-color: var(--Dark-Blue);
+    width:63%;
+    align-self: end;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+   border-radius: 0.5rem;
+   position: relative;
+
+}
+.container2>p{
+ color:var(--Pale-Blue);
+}
+.container2 .meter-container{
+    height:1.3rem;
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 0.6rem;
+   padding:0.1rem;
+   display: flex;
+   align-items: center;
+   margin-top:1rem;
+   margin-bottom:0.5rem;
+}
+.container2 .meter-container .usage-meter{
+ width:78%;
+ background-image: linear-gradient( to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+
+ height:0.9rem;
+ border-radius: 0.6rem;
+ margin:auto 0;
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ padding:0.1rem;
+ animation: use 0.8s  forwards;
+}
+@keyframes use{
+    0%{
+     width:0%;
+    }
+  100%{
+    width:78%;
+  }
+}
+.container2 .data-limit{
+  display: flex;
+  justify-content: space-between;
+ color:var(--Pale-Blue);
+}
+.data-left{
+  width:200px;
+    height: 110px;
+position: absolute;
+ top:-40%;
+ right:2.3rem;
+}
+.data-left .top{
+    height:85px;
+    background-color: white;
+    border-radius: 1rem 1rem 0rem 1rem;
+ text-align: center;
+ padding-top:1rem;
+  
+}
+.data-left .top .number{
+    font-size: 2.5rem;
+    color:var(--Very-Dark-Blue);
+    font-weight: 700;
+
+}
+.data-left .top sup{
+    color:var(--Grayish-Blue);
+    font-weight: 700;
+    padding-left:0.3rem;
+}
+.data-left .bottom{
+    height:25px;
+  position: relative;
+  background-color: white;
+
+}
+
+.data-left .bottom>div{
+    height:35px;
+    width:210px;
+    background-color: var(--Dark-Blue);
+    transform: skewX(50deg);
+   position:absolute;
+
+top:0;
+right:0;
+}
+
+.container2 .usage-meter .circle{
+    width:0.7rem;
+    height:0.7rem;
+    background-color:white;
+    border-radius: 50%;
+    padding-right:0.1rem;
+}
+
+@media screen and (max-width:374px){
+    .icons>div{
+       padding:0 1rem;
+}
+   
+  .container1{
+    max-width:235px;
+ }
+     .container2{
+      max-width:250px;
+        }
+       
+}
+@media screen and (max-width:1150px){
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      background-image: url(images/bg-mobile.png);
+      background-size: 100% 100%;
+       font-family: 'Raleway', sans-serif;
+       }
+    main{
+        width: 100%;
+        min-height: 180px;
+     
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     .container1{
+     
+       padding:2.5rem 3rem 3rem 2.5rem;
+       width:350px;
+         border-top-right-radius: 30%;
+         margin-bottom: 1rem;
+    }
+    .container2{
+        background-color: var(--Dark-Blue);
+       width:350px;
+      
+        align-self: center;
+        padding: 3rem 2.5rem 2.5rem 2.5rem;
+       border-radius: 0.5rem;
+       position: relative;
+    }
+    .data-left{
+        width:200px;
+        height: 90px;
+    position: absolute;
+     top:unset;
+     right:unset;
+     bottom:-60%;
+    left:50%;
+
+    transform: translate(-50%,-50%);
+    }
+    .data-left .top{
+        border-radius: 1rem 1rem 1rem 1rem;}
+    .data-left .bottom{
+      display: none;
+    }
+}
