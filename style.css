@@ -68,8 +68,10 @@ transform: scale(1.2);
    position: relative;
 
 }
-.container2>p{
+.container2 .usage{
  color:var(--Pale-Blue);
+  font-size: 1rem;
+ font-weight: 400;
 }
 .container2 .meter-container{
     height:1.3rem;
