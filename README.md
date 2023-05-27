@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://github.com/madhukar-30/Fylo-Data-Storage-Component.git)
-- Live Site URL: [ live site URL here](https://your-live-site-url.com)
+- Live Site URL: [ live site URL here](https://madhukar-30.github.io/Fylo-Data-Storage-Component/)
 
 ## My process
 
