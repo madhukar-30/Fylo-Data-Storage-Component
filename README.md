@@ -25,14 +25,13 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
-
 ![](./ss-fylo-storage-component.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://github.com/madhukar-30/Fylo-Data-Storage-Component.git)
+- Live Site URL: [ live site URL here](https://your-live-site-url.com)
 
 ## My process
 
